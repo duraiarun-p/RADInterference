@@ -1,6 +1,6 @@
 clc;clear;close all;
 %%
-%Parameters
+%Parameters for chirp generation
 F1=2e6; %Start
 F2=3e6; %Stop
 TimeDuration=20e-6;%sec
