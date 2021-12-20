@@ -3,12 +3,12 @@ clc;clear;close all;
 %Parameters for chirp generation
 F1=2e6; %Start
 F2=3e6; %Stop
-TimeDuration=20e-6;%sec
+TimeDuration=10e-3;%sec
 
 Fs=F1*10; %Sampling 10 times of F1
 
 
-HalfTime=0.5*TimeDuration; % Cross over time
+HalfTime=TimeDuration; % Cross over time
 
 t=0:1/Fs:TimeDuration;t=t';
 Sig=chirp(t,F1,HalfTime,F2);
